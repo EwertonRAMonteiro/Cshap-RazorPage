@@ -20,6 +20,21 @@
         </tr>
     </thead>
     <tbody>
-
+        @foreach (var item in Model.ListClientes)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nome</td>
+                <td>@item.Cpf</td>
+                <td>@item.Endereco</td>
+                <td>@item.Email</td>
+                <td>@item.Telefone</td>
+                <td>@item.Created_at</td>
+                <td>
+                    <a class="btn btn-warning btn-sm" href="/Clientes/Edit?id">Atualizar</a>
+                    <a class="btn btn-danger btn-sm" href="/Clientes/Delete?id">Excluir</a>
+                </td>
+            </tr>   
+        }
     </tbody>
 </table>

@@ -23,16 +23,16 @@ namespace Vayvem.Pages.Clientes
                         {
                             while (reader.Read())
                             {
-                                ClienteInfo info = new ClienteInfo();
-                                info.Id = "" + reader.GetInt32(0);
-                                info.Nome = reader.GetString(1);
-                                info.Cpf = reader.GetString(2);
-                                info.Endereco = reader.GetString(3);
-                                info.Email = reader.GetString(4);
-                                info.Telefone = reader.GetString(5);
-                                info.created_at = reader.GetDateTime(6).ToString();
+                                ClienteInfo clienteInfo = new ClienteInfo();
+                                clienteInfo.Id = "" + reader.GetInt32(0);
+                                clienteInfo.Nome = reader.GetString(1);
+                                clienteInfo.Cpf = reader.GetString(2);
+                                clienteInfo.Endereco = reader.GetString(3);
+                                clienteInfo.Email = reader.GetString(4);
+                                clienteInfo.Telefone = reader.GetString(5);
+                                clienteInfo.Created_at = reader.GetDateTime(6).ToString();
 
-                                ListClientes.Add(info);
+                                ListClientes.Add(clienteInfo);
                             }
                         }
                     
@@ -55,6 +55,6 @@ namespace Vayvem.Pages.Clientes
         public String Endereco;
         public String Email;
         public String Telefone;
-        public String created_at;
+        public String Created_at;
     }
 }
