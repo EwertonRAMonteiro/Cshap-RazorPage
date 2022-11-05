@@ -4,9 +4,9 @@
 ## :computer: Tecnologias Utilizadas
 
 * **Banco de Dados:** SQL
-* **Back-end:** Java Spring Boot, Spring MVC, Persistência de Dados com Spring Data JPA
-* **Front-end:** HTML, CSS, Bootstrap, JavaScript e ReactJS
-* **Ferramentas:** Visual Studio Code, SpringTool Suite 4 e MySQL Workbench 
+* **Back-end:** C#, SQL, RAZORPAGE
+* **Front-end:** HTML, CSS, Bootstrap
+* **Ferramentas:** Visual Studio Code, Sql server 
 
 
 
