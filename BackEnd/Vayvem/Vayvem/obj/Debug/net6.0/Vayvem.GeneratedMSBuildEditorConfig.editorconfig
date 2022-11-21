@@ -31,8 +31,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Contatos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Destinos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Hoteis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWlzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Index.cshtml]
@@ -41,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Promocoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvbW9jb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Remakker/Documents/cSharp/BackEnd/Vayvem/Vayvem/Pages/Shared/_ValidationScriptsPartial.cshtml]

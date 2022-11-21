@@ -10,23 +10,34 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Vayvem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <!--bootstrap nav com alterações-->
+        <nav id="cont" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Index">
+                    <img src="~/img/logo/logoIconeNav.png" alt="logoDaNav" width="99" height="25"
+                         class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-white" aria-current="page" href="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-white" href="/Destinos/Index">Destino</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Clientes/Index">Clientes</a>
+                            <a class="nav-link text-white" href="/Hoteis/Index">Hoteis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/Promocoes/Index">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/Contatos/Index">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -39,12 +50,81 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Vayvem - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer>
+        <div class="red-sociais">
+            <div>
+                <p>Conecte-se conosco nas redes sociais:</p>
+            </div>
+            <div>
+                <a href="#"><img width="25px" src="~/img/icones/twiter.svg" alt="twiter"></a>
+                <a href="ewertonra.monteiro@gmail.com"><img width="25px" src="~/img/icones/gmail.svg" alt="gmail"></a>
+                <a href="https://www.linkedin.com/in/ewerton-rubi/"><img width="25" src="~/img/icones/linkedin.svg" alt="linkedin"></a>
+                <a href="https://github.com/EwertonRAMonteiro"><img width="25" src="~/img/icones/github.svg" alt="github"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="box-table">
+            <div class="tabF">
+                <table class="tableF">
+                    <tr class="trF">
+                        <th>
+                            <h3><img width="50" src="~/img/logo/logoIcone.png" alt=""> VayVem</h3>
+                        </th>
+                    </tr>
+                    <tr class="trF">
+                        <td>
+                            Empresa conceituada com 15 <br> anos no mercado. Os melhores <br> preços e serviços você
+                            encontra <br> aqui.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab">
+                <table>
+                    <tr class="trF">
+                        <th><a class="rodFlex" href="">PRODUTOS</a></th>
+                    </tr>
+                    <tr class="trF">
+                        <td><a class="rodFlex" href="./hoteis.html">Hoteis</a></td>
+                        <td><a class="rodFlex" href="./promocoes.html">Pacotes</a></td>
+                        <td><a class="rodFlex" href="./destinos.html">Passagens</a></td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="tab">
+                <table>
+                    <tr class="trF">
+                        <th><a class="rodFlex" href="">LINKS ÚTEIS</a></th>
+                    </tr>
+                    <tr class="trF">
+                        <td><a class="rodFlex" href="./destinos.html">Destinos</a></td>
+                        <td><a class="rodFlex" href="./contatos.html">Contato</a></td>
+                        <td><a class="rodFlex" href="./promocoes.html">Promoções</a></td>
+                        <td><a class="rodFlex" href="./contatos.html">Suporte</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab">
+                <table>
+                    <tr class="trF">
+                        <th><a class="rodFlex" href="./contatos.html">CONTATO</a></th>
+                    </tr>
+                    <tr class="trF">
+                        <td><a class="rodFlex" href="#"> Brasil, Br 0000, BR</a></td>
+                        <td><a class="rodFlex" href="#"> info@example.com</a></td>
+                        <td><a class="rodFlex" href="#"> + 55 71 0000-0000</a></td>
+                        <td><a class="rodFlex" href="#"> + 55 71 0000-0000</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="tab">
+            <p>&copy; 2022 Copyright: <a href="#navega">Vayvem.com</a></p>
+
         </div>
     </footer>
-
+     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

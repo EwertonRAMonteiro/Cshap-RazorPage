@@ -1,18 +1,288 @@
-html {
-  font-size: 14px;
+/* resetando as configurações da pagina */
+
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+
+/*  adequação header para mudar a cor do plano de fundo */
+
+
+header {
+    grid-area: header;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 33, 104);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/*  limitando o conteudo da nav para não colar nas bordas da pagina */
+
+#cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-body {
-  margin-bottom: 60px;
+#mainOneH {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    padding: 2% 9% 2% 9%;
+    background-color: rgb(60, 33, 104);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.card {
+    margin-top: 2%;
+}
+
+/*  definindo as configurações da seção hoteis */
+
+.mainTwoH {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 33, 104);
+}
+
+.mainPromoH {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2% 9% 2% 9%;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: black;
+}
+
+.mainPromoPicH {
+    display: flex;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*  configurando as seções de promocao */
+
+#mainOneP {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    padding: 2% 9% 2% 9%;
+    background-color: rgb(108, 40, 218);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainTwoP {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 33, 104);
+}
+
+.mainPromoP {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2% 9% 2% 9%;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: black;
+}
+
+.mainPromoPicP {
+    display: flex;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*  definindo as configurações dos destinos */
+
+#mainOneD {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    padding: 2% 9% 2% 9%;
+    background-color: rgb(60, 33, 104);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainTwoD {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 33, 104);
+}
+
+.mainPromoD {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2% 9% 2% 9%;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: black;
+}
+
+.mainPromoPicD {
+    display: flex;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  dando padding para alinhamento das imgs*/
+.item {
+    padding: 2% 2% 2% 2%;
+}
+
+/*  padding para alinhar, e configurar um plano de fundo fluido 
+    e definindo a primeira seção do main*/
+
+#mainOne {
+    display: flex;
+    width: 100%;
+    height: 120%;
+    color: white;
+    padding: 2% 9% 2% 9%;
+    background-image: url(../img/background/2.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*  tornando a imagem fluida */
+
+.mainImg {
+    width: 100%;
+}
+/*  mudando a cor dos titulos */
+h1, h3 {
+    color: white;
+}
+
+/*  definindo as configurações das seções do main
+    essa configuração tabém se aplica a outras seções
+    ja que, o modelo segue o padrão da mesma */
+.mainTwo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 33, 104);
+}
+
+.mainPromo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2% 9% 2% 9%;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: black;
+}
+
+.mainPromoPic {
+    display: flex;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  dando padding para alinhamento das imgs*/
+.item {
+    padding: 2% 2% 2% 2%;
+}
+
+/*  configurações para o footer tanto para alinhamento
+    quanto para cores e afins */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(108, 40, 218);
+    color: white;
+    grid-area: footer;
+}
+
+.box-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+}
+
+hr {
+    width: 100%;
+    padding: 1px;
+}
+
+.trF {
+    display: flex;
+    flex-direction: column;
+    color: white !important;
+}
+
+footer a {
+    color: white;
+}
+
+    footer a:hover {
+        color: white;
+    }
+
+.rodFlex {
+    text-decoration: none;
+    display: flex;
+    color: white !important;
+}
+
+.tabF {
+    margin-top: 50px;
+}
+
+.red-sociais {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .red-sociais > div > a {
+        margin: 5px;
+    }
